@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room",
+    "pages/ququ/index/index",
+    "pages/ququ/chajuaidi/index",
+    "pages/ququ/faxain/index",
+    "pages/ququ/mine/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor":"#e4393c",
+    "color":"black",
+    "list": [
+      {
+        "pagePath": "pages/ququ/index/index",
+        "text": "寄快递",
+        "iconPath":"pages/ququ/page/fa2.png",
+        "selectedIconPath": "pages/ququ/page/fa1.png"
+      },
+      {
+        "pagePath": "pages/ququ/chajuaidi/index",
+        "text": "查快递",
+        "iconPath": "pages/ququ/page/search.png",
+        "selectedIconPath": "pages/ququ/page/search.png"
+      },
+      {
+        "pagePath": "pages/ququ/faxain/index",
+        "text": "发现",
+        "iconPath": "pages/ququ/page/browse.png",
+        "selectedIconPath": "pages/ququ/page/browse_fill.png"
+      },
+      {
+        "pagePath": "pages/ququ/mine/index",
+        "text": "我的",
+        "iconPath": "pages/ququ/page/addressbook.png",
+        "selectedIconPath": "pages/ququ/page/addressbook_fill.png"
+      }
+    ]
+  }
+}
