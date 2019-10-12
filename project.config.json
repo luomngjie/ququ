@@ -31,7 +31,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -43,6 +43,27 @@
 					"id": -1,
 					"name": "pages/ququ/index/index",
 					"pathName": "pages/ququ/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/ququ/chajuaidi/index",
+					"pathName": "pages/ququ/chajuaidi/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/ququ/mine/index",
+					"pathName": "pages/ququ/mine/index",
 					"scene": null
 				}
 			]

@@ -1,1 +1,35 @@
-<view>我是首页</view>
+ <view class="page-body">
+    <!-- 轮播图设置 -->
+    <view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <!-- 列表导航布局 -->
+    <view class='flex'>
+      <view class="flex-item" bindtap='preventPar'>
+        <text class="iconfont icon-jijianfasong"></text>
+        <view class='send-express'>寄快递</view>
+      </view>
+      <view class="flex-item" bindtap='preventPar'>
+        <text class="iconfont icon-qrcode"></text>
+        <view class='Quick-search'>快捷查询</view>
+      </view>
+      <view class="flex-item" bindtap='preventPar'>
+        <text class="iconfont icon-icon"></text>
+        <view class='Campus'>校园通</view>
+      </view>
+      <view class="flex-item" bindtap='preventPar'>
+        <text class="iconfont icon-faxian"></text>
+        <view class='Other'>其他服务</view>
+      </view>
+      <view class="flex1" bindtap="getAnymore">更多寄件 
+        <text class="iconfont {{checkSelect?'icon-arrow-down':'icon-arrow-up'}} flex1" ></text>
+      </view>
+    </view>
+  </view>

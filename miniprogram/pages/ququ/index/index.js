@@ -5,7 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
+    indicatorDots: true,
+    vertical: false,
+    autoplay: true,
+    interval: 2000,
+    duration: 500,
+    checkSelect:true
   },
 
   /**
@@ -13,6 +19,21 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+  /**
+   * 首页自定义加载更多点击函数
+   */
+  getAnymore:function(){
+    let select = this.data.checkSelect;
+    this.setData({
+      checkSelect:select = !select
+    });
+  },
+  /**
+   * 首页自定义列表书点击事件
+   */
+  preventPar:function(e){
+    console.log(e);
   },
 
   /**

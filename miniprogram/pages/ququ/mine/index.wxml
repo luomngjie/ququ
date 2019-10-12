@@ -1,1 +1,38 @@
-<view>我是我的</view>
+<view class="userinfo">
+    <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+    ></button>
+    <view >
+       <button class="userinfo-nickname"  open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo">点击登陆/注册</button>
+    </view>
+</view>
+<view class="content-header">
+  <view class="qrode"  data-text="3">
+    <view class="iconfont icon-coordinates"></view>
+    <view >地址</view>
+  </view>
+   <view class="qrode"  data-text="3">
+    <view class="iconfont icon-dingdan2"></view>
+    <view >订单</view>
+  </view>
+  <view class="qrode"  data-text="3">
+    <view class="iconfont icon-jingxuan-1"></view>
+    <view >精选</view>
+  </view>
+</view>
+<view class="view-list">
+  <view class="views">
+    <text class="iconfont icon-addressbook"></text>
+    <text>专属</text>
+    <text class="iconfont icon-forward"></text>
+  </view>
+   <view class="views">
+    <text class="iconfont icon-dianhua"></text>
+    <text>客服电话</text>
+    <text class="iconfont icon-forward"></text>
+  </view>
+</view>

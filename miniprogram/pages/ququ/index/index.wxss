@@ -1,1 +1,42 @@
-/* pages/ququ/index/index.wxss */
+.page-body{
+  padding:.5rem;
+}
+.demo-text-1{
+  background:red;height:100%;
+}
+.demo-text-2{
+  background:pink;height:100%;
+}
+.demo-text-3{
+  background: #eee;height:100%;
+}
+/* 列表导航布局 */
+.flex {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  flex-wrap:wrap;
+  justify-content: center; 
+  align-items: center;
+  margin-top:.5rem;
+}
+
+.flex-item {
+  width: 49%;height:3rem;display: flex;
+  justify-content: center; 
+  align-items: center;
+  border-bottom:1px solid #eee;
+}
+.flex-item:nth-child(even){
+  border-left:1px solid #eee;
+}
+
+/*分割线样式*/
+.divLine{
+ background: #eee;
+ width: 100%;
+ height:1px;
+}
+.flex1{
+  font-size: 10px;
+}

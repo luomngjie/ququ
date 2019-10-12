@@ -1,1 +1,27 @@
-<view>我是查快递</view>
+<view class="search-content">
+  <view class="header">
+    <view class="search-input">
+      <input class="weui-input" type='text' placeholder='输入运单号' bindfocus="getFocus" bindblur="blur" bindinput="bindKeyInput"/>
+    </view>
+    <view class="sao">
+      <!-- <text class="searchBtn" wx:if="{{isShow}}">取消</text> -->
+      <text class="searchBtn" wx:if="{{isShow}}" bindtap="searchCode">搜索</text>
+      <text class="iconfont icon-saoyisao" wx:else bindtap="saoyisao"></text>
+    </view>
+    
+  </view>
+  <view class="top-div" wx:if="{{isShow}}">暂无历史记录</view>
+  <view class ="content">
+    <view class="content-header">
+      <view class="send" bindtap="clickCheck" data-text="1">我寄的</view>
+      <view class="collect" bindtap="clickCheck" data-text="2">我收的</view>
+      <view class="qrode" bindtap="clickCheck" data-text="3">扫码寄<text class="iconfont icon-erweima"></text></view>
+    </view>
+    <view class="content-Con">
+      <image src="../page/download1.png" mode="aspectFit" style="width:70px;height:70px;"/>
+      <view class="alertCon">请登陆获取更多快递信息</view>
+      <button type="warn" size="{{warnSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="login">登陆</button>
+    </view>
+  </view>
+</view>
