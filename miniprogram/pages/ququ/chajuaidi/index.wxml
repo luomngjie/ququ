@@ -1,7 +1,7 @@
 <view class="search-content">
   <view class="header">
     <view class="search-input">
-      <input class="weui-input" type='text' placeholder='输入运单号' bindfocus="getFocus" bindblur="blur" bindinput="bindKeyInput"/>
+      <input class="weui-input" type='text' placeholder='输入你好运单号' bindfocus="getFocus" bindblur="blur" bindinput="bindKeyInput"/>
     </view>
     <view class="sao">
       <!-- <text class="searchBtn" wx:if="{{isShow}}">取消</text> -->
